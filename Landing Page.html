@@ -22,6 +22,13 @@
             padding: 20px;
         }
 
+
+        @media (max-width: 450px) {
+            header{
+           width: 100%;
+             }
+        }
+
         .header-line {
             height: 10px;
             background-color: #000;
@@ -37,8 +44,23 @@
 
         section {
             width: 48%;
-            height: 1000px;
         }
+
+
+        @media (max-width: 450px) {
+            main{
+            display: flex;
+           flex-direction: column;
+           width: 100%;
+             }
+        }
+
+        @media (max-width: 450px) {
+            section{
+           width: 100%;
+             }
+        }
+
 
         h2 {
             text-align: center;
@@ -52,7 +74,6 @@
             display: flex;
             justify-content: center;
             width: 100%;
-            height: 60%;
         }
 
         .section1 {
@@ -64,13 +85,10 @@
             margin-left: 4.5%
         }
 
-        .section3 {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 58%;
-            margin-left: 4.7%;
-            margin-top: 2.9%
+        @media (max-width: 450px) {
+            .section2{
+           width: 33%;
+             }
         }
 
         .text-box {
@@ -110,12 +128,13 @@
             background-color: #FFEBDC;
             padding: 10px;
             border-radius: 8px;
+            margin-bottom: 2.5%;
             color: #000;
         }
 
         .text-box-1 img {
-            max-width: 100%;
-            height: auto;
+            max-width: 50%;
+            height: 50%;
             display: block;
             margin: 0 auto;
         }
@@ -125,7 +144,6 @@
             padding: 10px;
             border-radius: 8px;
             color: #000;
-            height: 37%;
             margin-bottom: 5%;
             margin-left: -9.5%;
         }
@@ -135,7 +153,6 @@
             padding: 10px;
             border-radius: 8px;
             color: #000;
-            height: 27%;
             margin-bottom: 5%;
             margin-left: -9.5%;
         }
@@ -145,7 +162,6 @@
             padding: 10px;
             border-radius: 8px;
             color: #000;
-            height: 24%;
             margin-bottom: 5%;
             margin-left: -9.5%;
         }
@@ -156,7 +172,6 @@
             border-radius: 8px;
             text-align: left;
             color: #000;
-            height: 24%;
             margin-bottom: 5%;
             margin-left: -9.5%;
         }
@@ -165,27 +180,32 @@
             background-color: #FFEBDC;
             padding: 10px;
             border-radius: 8px;
+            margin-bottom: 5%;
             text-align: left;
             color: #000;
-            margin-bottom: 1.5%;
-            width: 96.2%;
         }
 
         .personality-boxes {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            margin-top: 20px;
+            justify-content: center;
             text-align: center;
         }
 
         .personality-box {
-            width: 80px;
-            height: 40px;
+            width: 95px;
+            height: 50px;
+            margin: 2%;
             background-color: #2D2D2D;
             border-radius: 8px;
             text-align: center;
             color: #ffffff;
+        }
+
+        @media (max-width: 450px) {
+            .personality-boxes{
+           flex-wrap: wrap;
+             }
         }
 
         .h2-2 {
@@ -265,6 +285,19 @@
                                 as it sooths the muscles in the leg whilst also acting as an attack.</h3>
                         </div>
                     </div>
+                        <div class="text-box-6">
+                            <h3 class="h3-3">Personality:</h3>
+                            <div class="personality-boxes">
+                                <div class="personality-box"><br>Extrovert</div>
+                                <div class="personality-box"><br>Goated</div>
+                                <div class="personality-box"><br>Literate</div>
+                            </div>
+                            <div class="personality-boxes">
+                                <div class="personality-box"><br>Loquacious</div>
+                                <div class="personality-box"><br>Nice w it</div>
+                                <div class="personality-box"><br>Thinker</div>
+                            </div>
+                        </div>
                 </div>
                 <div class="section2">
                     <div class="text-box-2">
@@ -310,21 +343,6 @@
                     </div>
                 </div>
             </section>
-                <div class="section3">
-                    <div class="text-box-6">
-                        <h3 class="h3-3">Personality:</h3>
-                        <div class="personality-boxes">
-                            <div class="personality-box">Extrovert</div>
-                            <div class="personality-box">Goated</div>
-                            <div class="personality-box">Literate</div>
-                        </div>
-                        <div class="personality-boxes">
-                            <div class="personality-box">Loquacious</div>
-                            <div class="personality-box">Nice w it</div>
-                            <div class="personality-box">Thinker</div>
-                        </div>
-                    </div>
-                </div>
         </section>
 
         <section class="section">
