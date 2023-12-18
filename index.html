@@ -13,6 +13,7 @@
             box-sizing: border-box;
             color: #ED4B4B;
             background-color: #2D2D2D;
+            width: auto;
         }
 
         header {
@@ -22,11 +23,16 @@
             padding: 20px;
         }
 
+        h1 {
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+        }
 
         @media (max-width: 450px) {
-            header{
-           width: 100%;
-             }
+            header {
+                width: 100%;
+            }
         }
 
         .header-line {
@@ -48,17 +54,17 @@
 
 
         @media (max-width: 450px) {
-            main{
-            display: flex;
-           flex-direction: column;
-           width: 100%;
-             }
+            main {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
         }
 
         @media (max-width: 450px) {
-            section{
-           width: 100%;
-             }
+            section {
+                width: 100%;
+            }
         }
 
 
@@ -72,7 +78,6 @@
 
         .main-container {
             display: flex;
-            justify-content: center;
             width: 100%;
         }
 
@@ -86,9 +91,9 @@
         }
 
         @media (max-width: 450px) {
-            .section2{
-           width: 33%;
-             }
+            .section2 {
+                width: 33%;
+            }
         }
 
         .text-box {
@@ -112,6 +117,10 @@
             display: block;
             margin: 0 auto;
             margin-bottom: 10px;
+        }
+
+        .img2 {
+            max-width: 15%;
         }
 
         ul {
@@ -138,11 +147,11 @@
             display: block;
             margin: 0 auto;
         }
-        
-        
+
+
         .text-box-2 {
             background-color: #FFEBDC;
-            padding: 10px;
+            padding: 13px;
             border-radius: 8px;
             color: #000;
             margin-bottom: 5%;
@@ -151,7 +160,7 @@
 
         .text-box-3 {
             background-color: #FFEBDC;
-            padding: 10px;
+            padding: 13px;
             border-radius: 8px;
             color: #000;
             margin-bottom: 5%;
@@ -160,7 +169,7 @@
 
         .text-box-4 {
             background-color: #FFEBDC;
-            padding: 10px;
+            padding: 13px;
             border-radius: 8px;
             color: #000;
             margin-bottom: 5%;
@@ -169,7 +178,7 @@
 
         .text-box-5 {
             background-color: #FFEBDC;
-            padding: 10px;
+            padding: 13px;
             border-radius: 8px;
             text-align: left;
             color: #000;
@@ -179,9 +188,18 @@
 
         .text-box-6 {
             background-color: #FFEBDC;
-            padding: 10px;
+            padding: 13px;
             border-radius: 8px;
-            margin-bottom: 5%;
+            margin-bottom: 2.5%;
+            text-align: left;
+            color: #000;
+        }
+
+        .text-box-7 {
+            background-color: #FFEBDC;
+            padding: 13px;
+            border-radius: 8px;
+            margin-bottom: 2.5%;
             text-align: left;
             color: #000;
         }
@@ -204,9 +222,9 @@
         }
 
         @media (max-width: 450px) {
-            .personality-boxes{
-           flex-wrap: wrap;
-             }
+            .personality-boxes {
+                flex-wrap: wrap;
+            }
         }
 
         .h2-2 {
@@ -235,13 +253,13 @@
         }
 
         .h3-1 {
-            margin-top: 7px;
+            margin-top: 3px;
             color: #ED4B4B;
             margin-bottom: 5px;
         }
 
         .h3-4 {
-            margin: 10px;
+            margin: 3.5px;
             color: #000;
             text-align: center;
             font-weight: 200;
@@ -256,6 +274,20 @@
             margin-top: 14px;
             margin-bottom: 5px;
         }
+
+        a:link {
+            color: #ED4B4B;
+        }
+
+        a:visited {
+            color: #ED4B4B;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #2D2D2D;
+        }
     </style>
 </head>
 
@@ -263,20 +295,22 @@
     <div class="header-line"></div>
 
     <header>
+        <img class="img2" src="Chris-A-MP3-IMG.png">
         <h1>Aeon-Stuff</h1>
-        <p>TK</p>
+        I'm Chris Adams. This is my blog. <br>
+        This blog is dedicated to the personal written works I've managed to assemble over the course of the last year <br>
+        and a half. It's deeply personal, but cared for and open to any who wish to read. It's mostly sad stuff, so <br>
+        I tried making up for it with a silly bio. Let me know if that worked. Oh right, if you wanna do that, <br>
+        <a href="Contact Page.html">click here</a>.
     </header>
-
     <main>
-
         <section class="section">
             <h2>Just Who the Hell Are You?</h2>
             <section class="main-container">
                 <div class="section1">
                     <div class="text-box-1">
                         <h2 class="h2-2">Christopher Adams</h2>
-                        <img src="c:\Users\jjcoo\Desktop\JD Toolkit\Profile Photo for UX.png"
-                            alt="Profile Photo for UX Persona">
+                        <img src="Profile Photo for UX.png" alt="Profile Photo for UX Persona">
                         <h3 class="h3-2">Bio:</h3>
                         <div>
                             <h3 class="h3-4"> Adams currently lives in New York, New York but is trying to move to Papa
@@ -286,19 +320,23 @@
                                 as it sooths the muscles in the leg whilst also acting as an attack.</h3>
                         </div>
                     </div>
-                        <div class="text-box-6">
-                            <h3 class="h3-3">Personality:</h3>
-                            <div class="personality-boxes">
-                                <div class="personality-box"><br>Extrovert</div>
-                                <div class="personality-box"><br>Goated</div>
-                                <div class="personality-box"><br>Literate</div>
-                            </div>
-                            <div class="personality-boxes">
-                                <div class="personality-box"><br>Loquacious</div>
-                                <div class="personality-box"><br>Nice w it</div>
-                                <div class="personality-box"><br>Thinker</div>
-                            </div>
+                    <div class="text-box-6">
+                        <h3 class="h3-3">Personality:</h3>
+                        <div class="personality-boxes">
+                            <div class="personality-box"><br>Extrovert</div>
+                            <div class="personality-box"><br>Goated</div>
+                            <div class="personality-box"><br>Literate</div>
                         </div>
+                        <div class="personality-boxes">
+                            <div class="personality-box"><br>Loquacious</div>
+                            <div class="personality-box"><br>Nice w it</div>
+                            <div class="personality-box"><br>Thinker</div>
+                        </div>
+                    </div>
+                    <div class="text-box-7">
+                        <h3 class="h3-3">Quote:</h3>
+                        <h3 class="h3-4">My name's Kodak Black but if you see me I'm white!</h3>
+                    </div>
                 </div>
                 <div class="section2">
                     <div class="text-box-2">
@@ -348,38 +386,54 @@
 
         <section class="section">
             <h2>And What Exactly Do You Do?</h2>
-            <ul>
-                <div style="display: flex; text-align: left; justify-content: center;">
-                    <li><a
-                            href="https://www.figma.com/file/ulbjF7Mh2FpziJ5PivHYn1/MP3-Chris-Adams?type=design&node-id=213-362&mode=design&t=o7IgrIQBwNKcFAoN-0">Blog
-                            1</a></li>
-                </div>
-                <div style="display: flex; text-align: left; justify-content: center;">
-                    <li><a
-                            href="https://www.figma.com/file/ulbjF7Mh2FpziJ5PivHYn1/MP3-Chris-Adams?type=design&node-id=213-362&mode=design&t=o7IgrIQBwNKcFAoN-0">Blog
-                            2</a></li>
-                </div>
-                <div style="display: flex; text-align: left; justify-content: center;">
-                    <li><a
-                            href="https://www.figma.com/file/ulbjF7Mh2FpziJ5PivHYn1/MP3-Chris-Adams?type=design&node-id=213-362&mode=design&t=o7IgrIQBwNKcFAoN-0">Blog
-                            3</a></li>
-                </div>
-                <div style="display: flex; text-align: left; justify-content: center;">
-                    <li><a
-                            href="https://www.figma.com/file/ulbjF7Mh2FpziJ5PivHYn1/MP3-Chris-Adams?type=design&node-id=213-362&mode=design&t=o7IgrIQBwNKcFAoN-0">Blog
-                            4</a></li>
-                </div>
-                <div style="display: flex; text-align: left; justify-content: center;">
-                    <li><a
-                            href="https://www.figma.com/file/ulbjF7Mh2FpziJ5PivHYn1/MP3-Chris-Adams?type=design&node-id=213-362&mode=design&t=o7IgrIQBwNKcFAoN-0">Blog
-                            5</a></li>
-                </div>
-                <div style="display: flex; text-align: left; justify-content: center;">
-                    <li><a
-                            href="https://www.figma.com/file/ulbjF7Mh2FpziJ5PivHYn1/MP3-Chris-Adams?type=design&node-id=213-362&mode=design&t=o7IgrIQBwNKcFAoN-0">Blog
-                            6</a></li>
-                </div>
-            </ul>
+            <section class="main-container">
+                <ul>
+                    <div class="text-box-7">
+                        <h3 class="h3-1"><a href="Blog copy.html">JoeBeau</a></h3>
+                        <div style="display: flex; text-align: left; justify-content: center;">
+                            <li><i>To JoeBeau, or Short, or JoeBi Wan. My Tommy Wiseau - for everything. For Walking Softly.
+                                Miss you, brother (If you see this, don’t laugh!). </i><br> <br>
+                                On the day of the funeral, your mom said you called her. She said that there was the most perfect
+                                pink cloud in the dawn sky, and she knew it was you. This beautiful boy, bright and buoyant, wanted to watch the sunrise with her.
+                                I went and visited you in your plot in Richmond not too long ago. I was headed to Cole and Henry’s and made a detour.
+                                Met with your mom, and sister Hannah. I don’t know where the rest of your family was, but we talked
+                                and  cried and laughed. Nobody had answers still, and that had not settled in. </li>
+                        </div>
+                    </div>
+                    <div class="text-box-7">
+                        <h3 class="h3-1"><a
+                                href="Blog copy 2.html">The Last Bear Hunt</a>
+                        </h3>
+                        <div style="display: flex; text-align: left; justify-content: center;">
+                            <li>I don’t remember what the sky looked like. I don’t remember who I was then, or what I looked like,
+                                but I remember being barefoot. I remember how soft the uncut grass felt after walking through our gravel
+                                driveway. I remember it being warm enough to feel relieved by the breeze. I was alone, looking through the bottom
+                                board of the border fence, my gaze out toward an empty field in Round Hill, Virginia. I heard a door
+                                shut in the distance behind me, and I saw my father moving to meet me. The edge of the fence ran rough against
+                                my skin as I climbed up to the top board. I wanted to be right there next to him, staring out at the fields
+                                and woods that surrounded us. I wanted to be at his level. </li>
+                        </div>
+                    </div>
+                    <div class="text-box-7">
+                        <h3 class="h3-1"><a
+                                href="Blog copy 3.html">Healing and Hearing, Sadness and Sound</a>
+                        </h3>
+                        <div style="display: flex; text-align: left; justify-content: center;">
+                            <li><i>Introduction - Swims</i> <br> <br>
+                                When I was twelve, I rediscovered my earliest memory of my dad. It was of him during the summer time. I
+                                remember being small, and feeling a gravel path beneath me hurting my feet, and looking up at him with eyes
+                                squinted by the brightness of the sun. We were headed toward the pool in our backyard. He was looking down
+                                toward me and smiling. His smile was as big as he was to me. He bent down to hug me and I remember giggling
+                                when his scratchy beared touch my cheek. The next thing I remember is the feeling of the freezing water
+                                after he’d thrown me in, and how big of a splash he’d made diving in after me. I remember how it sounded,
+                                not the splashing of the water, or his voice, or the birds, or anyone elses voice, but the song coming from
+                                the open kitchen window. It was quiet, but I heard it clear and felt its rhythm warm the icy water around
+                                me. It was an acoustic guitar and a harmonica playing in tandem and it made the people outside of the pool
+                                sing “come on, come on down”.</li>
+                        </div>
+                    </div>
+                </ul>
+            </section>
         </section>
 
     </main>
